@@ -127,7 +127,7 @@ for i, c in enumerate(configs):
 
     signature = bls.Sign(privkey, signing_root)
     print("computed signature: ", signature.hex())
-    print("expected signature: ", c.sig)
+    print("  client signature: ", c.sig)
 
     deposit_data = spec.DepositData(
         pubkey=pubkey,
